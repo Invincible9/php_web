@@ -33,10 +33,57 @@
                         </div>
                     </footer>
                 </article>
+
+                <br />
+                <a class="btn btn-success btn-sm" id="add" >Add Comment</a>
+                <div id="comment"></div>
+
+                <br />
+                <hr />
+
+                {% for comment in comments %}
+                    <p>{{ comment.content }}</p>
+
+                   <br /> {{ comment.author.fullName }} | <a href="{{ path('user_profile', {id: comment.author.id }) }}">
+                       <img class="rounded-circle"
+                            src="{{ asset('uploads/images/users/' ~ comment.author.image ) }}"
+                            width="30px" height="10px"  />
+
+                   </a><br />
+                    <small>{{ comment.dateAdded|date("F jS \\a\\t g:ia") }}</small>
+                    <hr />
+                {% endfor %}
+
             </div>
+
+
         </div>
     </div>
 
+
+
+    <script>
+        $('#add').click(function () {
+            $('#comment').empty();
+
+            let commentForm =
+                `
+                <form method="post" action="{{ path('message_create', {id: article.id}) }}">
+                    <div class="form-group">
+                        <div class="col-sm-6">
+                        <textarea class="form-control" rows="6" id="article_content" name="message[content]"></textarea>
+                        <input type="submit" value="Add" class="btn btn-success btn-sm" />
+                        </div>
+                    </div>
+                </form>
+                `;
+
+            $('#comment').append(commentForm);
+            $('#comment').toggle();
+
+        })
+
+    </script>
 
 
 {% endblock %}

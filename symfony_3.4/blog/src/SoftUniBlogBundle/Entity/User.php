@@ -4,6 +4,7 @@ namespace SoftUniBlogBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Tests\Fixtures\Comment;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -70,10 +71,18 @@ class User implements UserInterface
      */
     private $roles;
 
+    /**
+     * @var ArrayCollection|Comment[]
+     *
+     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Message", mappedBy="author")
+     */
+    private $comments;
+
     public function __construct()
     {
         $this->articles = new ArrayCollection();
         $this->roles = new ArrayCollection();
+        $this->comments = new ArrayCollection();
     }
 
     /**
@@ -275,6 +284,24 @@ class User implements UserInterface
     public function setImage(string $image)
     {
         $this->image = $image;
+    }
+
+    /**
+     * @return ArrayCollection|Comment[]
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param Message $comments
+     * @return User
+     */
+    public function setComments(Message $comments)
+    {
+        $this->comments[] = $comments;
+        return $this;
     }
 }
 

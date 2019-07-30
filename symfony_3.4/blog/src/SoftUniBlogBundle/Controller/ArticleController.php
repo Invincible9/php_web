@@ -4,6 +4,7 @@ namespace SoftUniBlogBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use SoftUniBlogBundle\Entity\Article;
+use SoftUniBlogBundle\Entity\Message;
 use SoftUniBlogBundle\Entity\User;
 use SoftUniBlogBundle\Form\ArticleType;
 use SoftUniBlogBundle\Service\Articles\ArticleServiceInterface;
@@ -181,9 +182,14 @@ class ArticleController extends Controller
         $em->persist($article);
         $em->flush();
 
+        $comments = $this->getDoctrine()
+                ->getRepository(Message::class)
+                ->findBy(['article' => $article], ['dateAdded' => 'DESC']);
+
         return $this->render("articles/view.html.twig",
             [
-                'article' => $article
+                'article' => $article,
+                'comments' => $comments
             ]);
     }
 

@@ -2,6 +2,7 @@
 
 namespace SoftUniBlogBundle\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -67,9 +68,17 @@ class Article
      */
     private $viewCount;
 
+    /**
+     * @var ArrayCollection|Message[]
+     *
+     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Message", mappedBy="article")
+     */
+    private $comments;
+
     public function __construct()
     {
         $this->dateAdded = new \DateTime('now');
+        $this->comments = new ArrayCollection();
     }
 
     /**
@@ -227,6 +236,24 @@ class Article
     public function setImage(string $image)
     {
         $this->image = $image;
+    }
+
+    /**
+     * @return ArrayCollection|Message[]
+     */
+    public function getComments()
+    {
+        return $this->comments;
+    }
+
+    /**
+     * @param ArrayCollection $comments
+     * @return Article
+     */
+    public function setComments(ArrayCollection $comments)
+    {
+        $this->comments = $comments;
+        return $this;
     }
 
 
