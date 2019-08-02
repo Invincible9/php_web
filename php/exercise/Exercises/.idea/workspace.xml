@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="06bea0a2-6403-42a4-866b-59426d53eef1" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="shop: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="156" column="10" selection-start-line="156" selection-start-column="10" selection-end-line="156" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FoodFactory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/factories/FoodFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnimalFactory.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/factories/AnimalFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" selection-start-line="2" selection-end-line="28" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Zebra.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Zebra.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" selection-start-line="8" selection-end-line="34" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mouse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Mouse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" selection-start-line="8" selection-end-line="32" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tiger.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Tiger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" selection-start-line="8" selection-end-line="33" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Cat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" selection-start-line="8" selection-end-line="58" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vegetable.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/foods/Vegetable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" selection-start-line="8" selection-end-line="27" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Meat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/foods/Meat.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="8" selection-start-line="8" selection-end-line="26" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/basic1/Products.php" />
+        <option value="$PROJECT_DIR$/basic1/view_product.php" />
+        <option value="$PROJECT_DIR$/basic/edit_form.php" />
+        <option value="$PROJECT_DIR$/basic/Products.php" />
+        <option value="$PROJECT_DIR$/basic/fileUpload.php" />
+        <option value="$PROJECT_DIR$/basic/view_product.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/ClassBox/Box.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/ClassBox/Main.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/ShoppingSpree/Product.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/ShoppingSpree/Main.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/ShoppingSpree/Person.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/BookShop/GoldenEditionBook.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/BookShop/Book.php" />
+        <option value="$PROJECT_DIR$/DefiningClasses/Encapsulation/BookShop/Main.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/Student.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/Person.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/Citizen.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/DefineAnInterfacePerson/Citizen.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/MultipleImplementation/IIdentity.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/MultipleImplementation/IBirthable.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/MultipleImplementation/Citizen.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/Telephony/ICall.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/Telephony/IBrowse.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/Telephony/SmartPhone.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/IIdentity.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Identity.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Robot.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Person.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Citizen.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Main.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Cat.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Siamese.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/StreetExtraordinaire.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Cymric.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Factory.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Main.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Felime.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/AnimalFactory.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/factories/AnimalFactory.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Animal.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Tiger.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Cat.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Meat.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Food.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Vegetable.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Mouse.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Zebra.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Mammal.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Main.php" />
+        <option value="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/FoodFactory.php" />
+        <option value="$PROJECT_DIR$/Main.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1920" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Exercises" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercises" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blog" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exercises\InterfacesAndAbstraction\MultipleImplementation" />
+      <recent name="C:\xampp\htdocs\Exercises" />
+      <recent name="C:\xampp\htdocs\Exercises\OOP" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exercises\InterfacesAndAbstraction\WildFarmHierarchy\foods" />
+      <recent name="C:\xampp\htdocs\Exercises\InterfacesAndAbstraction\WildFarmHierarchy\animals" />
+      <recent name="C:\xampp\htdocs\Exercises\InterfacesAndAbstraction\WildFarmHierarchy\factories" />
+      <recent name="C:\xampp\htdocs\Exercises\InterfacesAndAbstraction\WildFarmHierarchy\abstractions" />
+      <recent name="C:\xampp\htdocs\Exercises\InterfacesAndAbstraction\CatLady\factory" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHP Script.Main.php (3)">
+    <configuration name="Main.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Main.php" />
+    <configuration name="Main.php (2)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Main.php" />
+    <configuration name="Main.php (3)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Main.php" />
+    <configuration name="Main.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Main.php" />
+    <configuration name="SmartPhone.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/InterfacesAndAbstraction/Telephony/SmartPhone.php" />
+    <list>
+      <item itemvalue="PHP Script.SmartPhone.php" />
+      <item itemvalue="PHP Script.Main.php (2)" />
+      <item itemvalue="PHP Script.Main.php" />
+      <item itemvalue="PHP Script.Main.php (1)" />
+      <item itemvalue="PHP Script.Main.php (3)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHP Script.Main.php (3)" />
+        <item itemvalue="PHP Script.Main.php (1)" />
+        <item itemvalue="PHP Script.Main.php" />
+        <item itemvalue="PHP Script.Main.php (2)" />
+        <item itemvalue="PHP Script.SmartPhone.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06bea0a2-6403-42a4-866b-59426d53eef1" name="Default" comment="" />
+      <created>1538477293232</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1538477293232</updated>
+      <workItem from="1538477294371" duration="10111000" />
+      <workItem from="1538737249933" duration="11313000" />
+      <workItem from="1539093804839" duration="3637000" />
+      <workItem from="1539340664937" duration="11959000" />
+      <workItem from="1539686860817" duration="10538000" />
+      <workItem from="1539945035868" duration="9199000" />
+      <workItem from="1540291558238" duration="10910000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="67667000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22416107" />
+      <window_info anchor="bottom" id="TODO" order="5" />
+      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32348993" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.67655367" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="11" weight="0.3983051" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32952926" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/basic/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/view_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/Products.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="97" column="27" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/fileUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/ClassBox/Box.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/ClassBox/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1853">
+          <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/ShoppingSpree/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/ShoppingSpree/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/BookShop/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="127" column="36" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/BookShop/GoldenEditionBook.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/BookShop/Book.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DefiningClasses/Encapsulation/ShoppingSpree/Person.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="106" column="59" selection-start-line="106" selection-start-column="59" selection-end-line="106" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/DefineAnInterfacePerson/Person.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/DefineAnInterfacePerson/Citizen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="916">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/MultipleImplementation/IBirthable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/MultipleImplementation/Person.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" selection-start-line="2" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/MultipleImplementation/Citizen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="26" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/Telephony/ICall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/Telephony/IBrowse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/Telephony/SmartPhone.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/MultipleImplementation/IIdentity.php" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9367">
+          <caret line="551" column="47" selection-start-line="551" selection-start-column="34" selection-end-line="551" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Robot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="5" selection-start-line="53" selection-start-column="4" selection-end-line="61" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Identity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Person.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Citizen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/BorderControl/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Cymric.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Siamese.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="31" column="34" lean-forward="true" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/StreetExtraordinaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/CatLady/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/factories/AnimalFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/abstractions/Food.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HtmlTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/abstractions/Animal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="105" column="1" lean-forward="true" selection-start-line="2" selection-end-line="105" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/abstractions/Mammal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" selection-start-line="2" selection-end-line="45" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/abstractions/Felime.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/foods/Meat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="8" selection-start-line="8" selection-end-line="26" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/foods/Vegetable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="58" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Tiger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Mouse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="32" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/animals/Zebra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" selection-start-line="8" selection-end-line="34" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/factories/AnimalFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InterfacesAndAbstraction/WildFarmHierarchy/factories/FoodFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="156" column="10" selection-start-line="156" selection-start-column="10" selection-end-line="156" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
