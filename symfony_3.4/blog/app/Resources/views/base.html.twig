@@ -33,7 +33,21 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
+
                         {% if app.user %}
+                            {% if app.user.isAdmin() %}
+                                <li>
+                                    <a href="{{ path('admin_users') }}" class="navbar-brand">
+                                        Admin Panel
+                                    </a>
+                                </li>
+                            {% endif %}
+                            <li>
+                                <a href="{{ path('user_mailbox') }}" class="navbar-brand" >
+                                    <span class="glyphicon glyphicon-envelope"></span>({{ app.user.recipientMessages|length }}) MailBox
+                                </a>
+                            </li>
+
                             <li>
                                 <a href="{{ path('user_profile') }}" class="navbar-brand">
                                     My Profile
@@ -53,7 +67,7 @@
                                 <a href="{{ path('user_profile') }}">
                                     <img class="rounded-circle"
                                          src="{{ asset('uploads/images/users/' ~ app.getUser().image ) }}"
-                                         width="50px" height="20px"  />
+                                         width="50px" height="20px"/>
                                 </a>
                             </li>
                             <li>

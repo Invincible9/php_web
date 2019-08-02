@@ -4,10 +4,11 @@ namespace SoftUniBlogBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use SoftUniBlogBundle\Entity\Article;
-use SoftUniBlogBundle\Entity\Message;
+use SoftUniBlogBundle\Entity\Comment;
 use SoftUniBlogBundle\Entity\User;
 use SoftUniBlogBundle\Form\ArticleType;
 use SoftUniBlogBundle\Service\Articles\ArticleServiceInterface;
+use SoftUniBlogBundle\Service\Comment\CommentServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
@@ -21,14 +22,22 @@ class ArticleController extends Controller
      * @var ArticleServiceInterface
      */
     private $articleService;
+    /**
+     * @var CommentServiceInterface
+     */
+    private $commentService;
 
     /**
      * ArticleController constructor.
-     * @param $articleService
+     * @param ArticleServiceInterface $articleService
+     * @param CommentServiceInterface $commentService
      */
-    public function __construct(ArticleServiceInterface $articleService)
+    public function __construct(
+        ArticleServiceInterface $articleService,
+        CommentServiceInterface $commentService)
     {
         $this->articleService = $articleService;
+        $this->commentService = $commentService;
     }
 
 
@@ -182,9 +191,7 @@ class ArticleController extends Controller
         $em->persist($article);
         $em->flush();
 
-        $comments = $this->getDoctrine()
-                ->getRepository(Message::class)
-                ->findBy(['article' => $article], ['dateAdded' => 'DESC']);
+        $comments = $this->commentService->getAllByArticleId($id);
 
         return $this->render("articles/view.html.twig",
             [

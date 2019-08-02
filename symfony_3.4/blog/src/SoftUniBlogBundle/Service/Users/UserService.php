@@ -79,4 +79,9 @@ class UserService implements UserServiceInterface
     {
         return $this->userRepository->update($user);
     }
+
+    public function getAll()
+    {
+        return $this->userRepository->findAll();
+    }
 }

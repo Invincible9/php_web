@@ -77,6 +77,7 @@ class ArticleService implements ArticleServiceInterface
      */
     public function getOne(int $id): ?Article
     {
+
         return $this->articleRepository->find($id);
     }
 

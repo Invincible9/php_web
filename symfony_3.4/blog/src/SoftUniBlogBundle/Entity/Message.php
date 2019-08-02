@@ -24,6 +24,13 @@ class Message
     /**
      * @var string
      *
+     * @ORM\Column(name="about", type="string", length=255)
+     */
+    private $about;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="content", type="text")
      */
     private $content;
@@ -36,23 +43,30 @@ class Message
     private $dateAdded;
 
     /**
-     * @var User
+     * @var bool
      *
-     * @ORM\ManyToOne(targetEntity="SoftUniBlogBundle\Entity\User", inversedBy="comments")
-     *
+     * @ORM\Column(name="is_seen", type="boolean")
      */
-    private $author;
+    private $isSeen;
 
     /**
-     * @var Article
+     * @var User
      *
-     * @ORM\ManyToOne(targetEntity="SoftUniBlogBundle\Entity\Article", inversedBy="comments")
+     * @ORM\ManyToOne(targetEntity="SoftUniBlogBundle\Entity\User", inversedBy="senderMessages")
      */
-    private $article;
+    private $sender;
+
+    /**
+     * @var User
+     *
+     * @ORM\ManyToOne(targetEntity="SoftUniBlogBundle\Entity\User", inversedBy="recipientMessages")
+     */
+    private $recipient;
 
     public function __construct()
     {
         $this->dateAdded = new \DateTime('now');
+        $this->setIsSeen(false);
     }
 
 
@@ -64,6 +78,30 @@ class Message
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set about.
+     *
+     * @param string $about
+     *
+     * @return Message
+     */
+    public function setAbout($about)
+    {
+        $this->about = $about;
+
+        return $this;
+    }
+
+    /**
+     * Get about.
+     *
+     * @return string
+     */
+    public function getAbout()
+    {
+        return $this->about;
     }
 
     /**
@@ -117,36 +155,54 @@ class Message
     /**
      * @return User
      */
-    public function getAuthor(): User
+    public function getSender(): User
     {
-        return $this->author;
+        return $this->sender;
     }
 
     /**
-     * @param User $author
+     * @param User $sender
      * @return Message
      */
-    public function setAuthor(User $author)
+    public function setSender(User $sender): Message
     {
-        $this->author = $author;
+        $this->sender = $sender;
         return $this;
     }
 
     /**
-     * @return Article
+     * @return User
      */
-    public function getArticle(): Article
+    public function getRecipient(): User
     {
-        return $this->article;
+        return $this->recipient;
     }
 
     /**
-     * @param Article $article
+     * @param User $recipient
      * @return Message
      */
-    public function setArticle(Article $article)
+    public function setRecipient(User $recipient) : Message
     {
-        $this->article = $article;
+        $this->recipient = $recipient;
         return $this;
     }
+
+    /**
+     * @return bool
+     */
+    public function isSeen(): bool
+    {
+        return $this->isSeen;
+    }
+
+    /**
+     * @param bool $isSeen
+     */
+    public function setIsSeen(bool $isSeen): void
+    {
+        $this->isSeen = $isSeen;
+    }
+
+
 }

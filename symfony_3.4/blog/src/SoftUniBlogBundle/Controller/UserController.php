@@ -5,6 +5,7 @@ namespace SoftUniBlogBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use SoftUniBlogBundle\Entity\User;
 use SoftUniBlogBundle\Form\UserType;
+use SoftUniBlogBundle\Service\message\MessageServiceInterface;
 use SoftUniBlogBundle\Service\Users\UserServiceInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Filesystem\Filesystem;
@@ -21,9 +22,17 @@ class UserController extends Controller
      */
     private $userService;
 
-    public function __construct(UserServiceInterface $userService)
+    /**
+     * @var MessageServiceInterface
+     */
+    private $messageService;
+
+    public function __construct(
+        UserServiceInterface $userService,
+        MessageServiceInterface $messageService)
     {
         $this->userService = $userService;
+        $this->messageService = $messageService;
     }
 
     /**
@@ -75,7 +84,10 @@ class UserController extends Controller
     public function profile()
     {
         return $this->render("users/profile.html.twig",
-            ['user' => $this->userService->currentUser()]);
+            [
+                'user' => $this->userService->currentUser(),
+                'msg' => $this->messageService->getAllUnseenByUser()
+            ]);
     }
 
 

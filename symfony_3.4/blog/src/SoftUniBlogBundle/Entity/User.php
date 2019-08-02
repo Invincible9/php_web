@@ -4,7 +4,6 @@ namespace SoftUniBlogBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
-use JMS\Serializer\Tests\Fixtures\Comment;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
@@ -74,15 +73,32 @@ class User implements UserInterface
     /**
      * @var ArrayCollection|Comment[]
      *
-     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Message", mappedBy="author")
+     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Comment", mappedBy="author")
      */
     private $comments;
+
+    /**
+     * @var ArrayCollection|Message[]
+     *
+     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Message", mappedBy="sender")
+     */
+    private $senderMessages;
+
+    /**
+     * @var ArrayCollection|Message[]
+     *
+     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Message", mappedBy="recipient")
+     *
+     */
+    private $recipientMessages;
 
     public function __construct()
     {
         $this->articles = new ArrayCollection();
         $this->roles = new ArrayCollection();
         $this->comments = new ArrayCollection();
+        $this->senderMessages = new ArrayCollection();
+        $this->recipientMessages = new ArrayCollection();
     }
 
     /**
@@ -295,13 +311,50 @@ class User implements UserInterface
     }
 
     /**
-     * @param Message $comments
+     * @param Comment $comments
      * @return User
      */
-    public function setComments(Message $comments)
+    public function setComments(Comment $comments)
     {
         $this->comments[] = $comments;
         return $this;
     }
+
+    /**
+     * @return ArrayCollection|Message[]
+     */
+    public function getSenderMessages()
+    {
+        return $this->senderMessages;
+    }
+
+    /**
+     * @param ArrayCollection|Message[] $senderMessages
+     */
+    public function setSenderMessages($senderMessages): void
+    {
+        $this->senderMessages = $senderMessages;
+    }
+
+    /**
+     * @return ArrayCollection|Message[]
+     */
+    public function getRecipientMessages()
+    {
+        return $this->recipientMessages;
+    }
+
+    /**
+     * @param ArrayCollection|Message[] $recipientMessages
+     */
+    public function setRecipientMessages($recipientMessages): void
+    {
+        $this->recipientMessages = $recipientMessages;
+    }
+
+
+
+
+
 }
 

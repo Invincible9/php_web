@@ -69,9 +69,9 @@ class Article
     private $viewCount;
 
     /**
-     * @var ArrayCollection|Message[]
+     * @var ArrayCollection|Comment[]
      *
-     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Message", mappedBy="article")
+     * @ORM\OneToMany(targetEntity="SoftUniBlogBundle\Entity\Comment", mappedBy="article")
      */
     private $comments;
 
@@ -239,7 +239,7 @@ class Article
     }
 
     /**
-     * @return ArrayCollection|Message[]
+     * @return ArrayCollection|Comment[]
      */
     public function getComments()
     {
