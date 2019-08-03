@@ -25,7 +25,7 @@ class AdminController extends Controller
      * @Route("/admin/users", name="admin_users" , methods={"GET"})
      * @return Response
      * @Security("is_granted('IS_AUTHENTICATED_FULLY')")
-     7*/
+     */
     public function indexAction()
     {
 
