@@ -6,18 +6,16 @@
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
+/vendor/
 ###< symfony/framework-bundle ###
 
-###> phpunit/phpunit ###
+###> symfony/phpunit-bridge ###
 .phpunit.result.cache
-###< phpunit/phpunit ###
+/phpunit.xml
+###< symfony/phpunit-bridge ###
 
-###> symfony/asset-mapper ###
-/public/assets/
-###< symfony/asset-mapper ###
-
-# Created by https://www.toptal.com/developers/gitignore/api/phpstorm,symfony
-# Edit at https://www.toptal.com/developers/gitignore?templates=phpstorm,symfony
+# Created by https://www.toptal.com/developers/gitignore/api/symfony,phpstorm
+# Edit at https://www.toptal.com/developers/gitignore?templates=symfony,phpstorm
 
 ### PhpStorm ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -164,7 +162,6 @@ fabric.properties
 /bin/*
 !bin/console
 !bin/symfony_requirements
-/vendor/
 
 # Assets and user uploads
 /web/bundles/
@@ -172,7 +169,6 @@ fabric.properties
 
 # PHPUnit
 /app/phpunit.xml
-/phpunit.xml
 
 # Build data
 /build/
@@ -190,4 +186,4 @@ fabric.properties
 /web/css/
 /web/js/
 
-# End of https://www.toptal.com/developers/gitignore/api/phpstorm,symfony
+# End of https://www.toptal.com/developers/gitignore/api/symfony,phpstorm
